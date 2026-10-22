@@ -194,7 +194,7 @@ tr.dragover td{border-top:3px solid var(--g2)}
    Conexión: dentro de Apps Script usa google.script.run;
    publicada en GitHub Pages habla con la API (doPost) de la planilla.
    ================================================================ */
-var API_URL = '';  // URL /exec de la implementación de Apps Script (se completa al implementar)
+var API_URL = 'https://script.google.com/macros/s/AKfycbzwOdQr93bce2dib1lXNmoPdAbF-ruflQriK6e5o69CDFm0qnBioSvOBddFCguyz4f7/exec';  // URL /exec de la implementación de Apps Script (se completa al implementar)
 (function(){
   if (window.google && google.script && google.script.run) return;
   try { var q=new URLSearchParams(location.search).get('api'); if(q) localStorage.setItem('val_api',JSON.stringify(q)); } catch(e){}
